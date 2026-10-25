@@ -4,6 +4,8 @@
 
 A light, ad-free home screen for Android TV and Google TV, made for weak boxes such as the Chromecast with Google TV (HD). No accounts, no tracking, no purchases.
 
+![Divan home screen](docs/screenshots/home-en.jpg)
+
 ## Features
 
 - **One row of apps** with banners: reorder (move left/right, to the start or the end), hide, change the banner, uninstall — all from a long press on OK.

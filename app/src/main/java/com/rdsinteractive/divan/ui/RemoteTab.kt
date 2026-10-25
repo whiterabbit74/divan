@@ -186,6 +186,13 @@ private fun RuleEditor(initial: RemapRule?, allApps: List<AppInfo>, onSave: (Rem
     when (step) {
         Step.Key -> DialogColumn(title = stringResource(R.string.remote_press_key), onDismiss = onDismiss) { _ ->
             val catcher = remember { FocusRequester() }
+            val record = { code: Int ->
+                Log.i("DivanRemap", "recorded ${keyName(code)}")
+                draft = draft.copy(keyCode = code)
+                step = Step.Press
+            }
+            // keys the remote service recorded (global keys never reach this window)
+            LaunchedEffect(Unit) { DivanState.recordedKeys.collect { record(it) } }
             // Without this the remote service would run the key's current rule instead.
             DisposableEffect(Unit) {
                 DivanState.capturingKey = true
@@ -208,9 +215,8 @@ private fun RuleEditor(initial: RemapRule?, allApps: List<AppInfo>, onSave: (Rem
                             protectedKey = true
                             return@onPreviewKeyEvent true
                         }
-                        Log.i("DivanRemap", "recorded ${keyName(code)}")
-                        draft = draft.copy(keyCode = code)
-                        step = Step.Press
+                        // the service, when on, records these itself and the window never sees them
+                        record(code)
                         true
                     }
                     .focusable(),

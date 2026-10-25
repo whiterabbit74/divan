@@ -4,6 +4,8 @@
 
 一款轻量、无广告的 Android TV / Google TV 桌面，专为 Chromecast with Google TV（HD）这类性能较弱的设备设计。无需账号，无追踪，无内购。
 
+![Divan 主屏幕](docs/screenshots/home-zh.jpg)
+
 ## 功能
 
 - **一行应用**，以横幅显示：长按确定键即可左移/右移、移到最前/最后、隐藏、更换横幅、卸载。

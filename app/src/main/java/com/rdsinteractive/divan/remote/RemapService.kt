@@ -114,19 +114,22 @@ class RemapService : AccessibilityService() {
         val current = settings ?: return false
         if (!current.remapEnabled) return false
         val code = event.keyCode
-        // The rule editor is recording a key: let it through to Divan's window untouched. The
-        // editor records on the press and closes its step before the release arrives, so the
-        // release of a key pressed while recording is let through too (DV-023).
+        // The rule editor is recording a key. Navigation keys go to its window (down moves to
+        // «Отмена»); any other key the service records itself and keeps from the system: global
+        // keys such as Netflix never reach a window, and would open their app. The editor closes
+        // its step before the release arrives, so that release is kept back too (DV-023).
         if (DivanState.capturingKey) {
-            if (event.action == KeyEvent.ACTION_DOWN) {
+            if (code in PROTECTED_KEYS) return false
+            if (event.action == KeyEvent.ACTION_DOWN && event.repeatCount == 0) {
                 capturedKeys += code
-                Log.i(TAG, "${keyName(code)}: passed to the rule editor")
+                DivanState.recordedKeys.tryEmit(code)
+                Log.i(TAG, "${keyName(code)}: recorded for the rule editor")
             }
-            return false
+            return true
         }
         if (code in capturedKeys) {
             if (event.action == KeyEvent.ACTION_UP) capturedKeys -= code
-            return false
+            return true
         }
         if (code in PROTECTED_KEYS) return false
         val rules = current.remapRules.filter { it.keyCode == code && inScope(it.scope) }.associateBy { it.press }
