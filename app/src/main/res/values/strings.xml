@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Divan</string>
+    <string name="remap_service_label">Divan: remote buttons</string>
+    <string name="remap_service_description">Remaps the remote\'s buttons by the rules in Divan settings. It sees only button presses and the name of the app on screen.</string>
+
+    <!-- Language picker: each language is named in itself. -->
+    <string name="language_system">System</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_russian" translatable="false">Русский</string>
+    <string name="language_chinese" translatable="false">中文</string>
+
+    <!-- Common -->
+    <string name="divan_settings">Divan settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="millis_short">%1$d ms</string>
+    <string name="ok_next">OK — next</string>
+
+    <!-- Settings tabs. Short: the whole row has to fit 960 dp. -->
+    <string name="settings_title">Settings</string>
+    <string name="tab_wallpaper">Wallpaper</string>
+    <string name="tab_apps">Apps</string>
+    <string name="tab_rows">Rows</string>
+    <string name="tab_look">Appearance</string>
+    <string name="tab_weather">Weather</string>
+    <string name="tab_remote">Remote</string>
+    <string name="tab_power">Power</string>
+    <string name="tab_parental">Parental</string>
+    <string name="tab_about">About</string>
+    <string name="about_text">Divan %1$s\nA launcher with no ads and no purchases. It goes online only for the weather and row artwork.</string>
+
+    <!-- Wallpaper -->
+    <string name="wallpaper_empty">Put pictures into the Pictures/Wallpapers folder on the TV.</string>
+    <string name="wallpaper_selected">Selected</string>
+
+    <!-- Appearance -->
+    <string name="look_language">Language</string>
+    <string name="look_theme">Theme</string>
+    <string name="look_theme_hint">OK — next · “Compact” fits six icons in the row instead of five</string>
+    <string name="theme_classic">Glass</string>
+    <string name="theme_compact">Compact</string>
+    <string name="look_dock_height">App row height</string>
+    <string name="dock_lift_bottom">Bottom</string>
+    <string name="dock_lift_lower">Lower</string>
+    <string name="dock_lift_middle">Middle</string>
+    <string name="dock_lift_higher">Higher</string>
+    <string name="dock_lift_high">High</string>
+    <string name="look_clock">Clock on the home screen</string>
+
+    <!-- Weather -->
+    <string name="weather_on_home">Weather on the home screen</string>
+    <string name="weather_online_note">Divan goes online only for the weather, the city and row artwork</string>
+    <string name="weather_units">Units</string>
+    <string name="weather_auto">Find the city automatically</string>
+    <string name="weather_auto_now">Now: %1$s</string>
+    <string name="weather_auto_sources">Google Wi-Fi location, then IP, then the time zone</string>
+    <string name="weather_locate_now">Find it now</string>
+    <string name="weather_city">City: %1$s, %2$s</string>
+    <string name="weather_search_hint">Choose a city by hand…</string>
+    <string name="weather_search_offline">No connection to the server, try again</string>
+    <string name="weather_search_empty">Nothing found</string>
+    <string name="weather_high_low">H %1$d°  L %2$d°</string>
+    <string name="place_source_device">by Wi-Fi (Google location)</string>
+    <string name="place_source_ip">by IP address</string>
+    <string name="place_source_time_zone">by time zone</string>
+    <string name="place_source_manual">by hand</string>
+    <!-- A place the geocoder could not name (no network yet). -->
+    <string name="place_here">Here</string>
+    <string name="condition_clear">Clear</string>
+    <string name="condition_partly_cloudy">Partly cloudy</string>
+    <string name="condition_cloudy">Cloudy</string>
+    <string name="condition_fog">Fog</string>
+    <string name="condition_drizzle">Drizzle</string>
+    <string name="condition_rain">Rain</string>
+    <string name="condition_snow">Snow</string>
+    <string name="condition_thunder">Thunderstorm</string>
+
+    <!-- Main city of a time zone: the last resort for the weather, and the default place. -->
+    <string name="city_concord">Concord</string>
+    <string name="city_los_angeles">Los Angeles</string>
+    <string name="city_denver">Denver</string>
+    <string name="city_chicago">Chicago</string>
+    <string name="city_new_york">New York</string>
+    <string name="city_moscow">Moscow</string>
+    <string name="city_kyiv">Kyiv</string>
+    <string name="city_minsk">Minsk</string>
+    <string name="city_berlin">Berlin</string>
+    <string name="city_london">London</string>
+    <string name="city_almaty">Almaty</string>
+    <string name="city_tbilisi">Tbilisi</string>
+    <string name="city_yerevan">Yerevan</string>
+    <string name="region_california">California, USA</string>
+    <string name="region_colorado">Colorado, USA</string>
+    <string name="region_illinois">Illinois, USA</string>
+    <string name="region_usa">USA</string>
+    <string name="region_russia">Russia</string>
+    <string name="region_ukraine">Ukraine</string>
+    <string name="region_belarus">Belarus</string>
+    <string name="region_germany">Germany</string>
+    <string name="region_uk">United Kingdom</string>
+    <string name="region_kazakhstan">Kazakhstan</string>
+    <string name="region_georgia">Georgia</string>
+    <string name="region_armenia">Armenia</string>
+
+    <!-- Notifications -->
+    <string name="notif_access_on">Notification access is on</string>
+    <string name="notif_access_off">Turn on notification access</string>
+    <string name="notif_access_on_hint">It is turned off in the same place, in Android settings</string>
+    <string name="notif_access_off_hint">Android settings will open: turn Divan on there</string>
+    <string name="notif_badge">Notification icon on the home screen</string>
+    <string name="notif_badge_hint">A bell with the count in the “Wi-Fi | time” pill; hidden without access</string>
+    <string name="notifications_hint">OK — open · hold OK — dismiss</string>
+    <string name="notifications_dismiss_all">Dismiss all</string>
+    <string name="notifications_empty">No notifications</string>
+    <plurals name="notifications_count">
+        <item quantity="one">%d notification</item>
+        <item quantity="other">%d notifications</item>
+    </plurals>
+
+    <!-- Rows -->
+    <string name="watch_next">Up Next</string>
+    <string name="rows_access">Allow reading apps\' channels</string>
+    <string name="rows_access_hint">Android will ask for access to the TV listings</string>
+    <string name="rows_watch_next">“Up Next” row</string>
+    <string name="rows_watch_next_hint">Movies and shows you started, the next episode</string>
+    <string name="rows_channels">Channel rows</string>
+    <string name="rows_channels_hint">Collections that apps put on the home screen</string>
+    <string name="rows_sources">Apps</string>
+    <string name="rows_none">No app has published channels or “Up Next” yet. They will appear here once an app does.</string>
+    <string name="rows_no_access">The list appears once access is allowed.</string>
+    <string name="rows_in_watch_next">%1$d in “Up Next”</string>
+    <string name="rows_nothing">nothing published right now</string>
+    <plurals name="rows_channel_count">
+        <item quantity="one">%d channel</item>
+        <item quantity="other">%d channels</item>
+    </plurals>
+    <plurals name="rows_channels_shown">
+        <item quantity="one">%1$d of %2$d channel</item>
+        <item quantity="other">%1$d of %2$d channels</item>
+    </plurals>
+    <plurals name="rows_card_count">
+        <item quantity="one">%d card</item>
+        <item quantity="other">%d cards</item>
+    </plurals>
+
+    <!-- Power -->
+    <string name="power_keep_awake">Stay awake when idle</string>
+    <string name="power_keep_awake_hint">No screensaver and no sleep after 30 minutes. The power button turns the TV off as usual</string>
+    <string name="power_needs_service">Needs the “Divan: remote buttons” service (Remote tab)</string>
+    <string name="power_app">App at power-on</string>
+    <string name="power_app_none_hint">None: the home screen stays</string>
+    <string name="power_app_hint">Divan opens and starts it by itself</string>
+    <string name="power_none">None</string>
+    <string name="power_delay">Delay</string>
+    <string name="power_delay_hint">A pause before the launch: time to stay on the home screen</string>
+    <string name="power_delay_none">At once</string>
+    <string name="power_on_wake">Also after sleep</string>
+    <string name="power_on_wake_hint">Otherwise only after the TV restarts</string>
+    <string name="power_pick_title">What to open at power-on?</string>
+    <string name="power_pick_nothing">Nothing, just the home screen</string>
+
+    <!-- Remote -->
+    <string name="remote_service_off">The “Divan: remote buttons” service is off</string>
+    <string name="remote_service_off_hint">Turn it on in Android accessibility settings, otherwise the rules do not work</string>
+    <string name="remote_enabled">Button remapping</string>
+    <string name="remote_enabled_hint">Master switch: the rules are kept</string>
+    <string name="remote_long_press">Long press delay</string>
+    <string name="remote_rules">Rules</string>
+    <string name="remote_with_default">along with the usual action</string>
+    <string name="remote_new">+ New remap</string>
+    <string name="remote_open">Open %1$s</string>
+    <string name="remote_edit">Edit</string>
+    <string name="remote_keep_default">Keep the button\'s usual action</string>
+    <string name="remote_replace_default">Replace the button\'s usual action</string>
+    <string name="remote_delete">Delete</string>
+    <string name="remote_press_key">Press a button on the remote</string>
+    <string name="remote_protected_key">Arrows and OK cannot be remapped: without them the TV cannot be controlled</string>
+    <string name="remote_current_key">Now: %1$s</string>
+    <string name="remote_waiting">Waiting for a press… (down — “Cancel”)</string>
+    <string name="remote_which_press">%1$s: which press?</string>
+    <string name="remote_what">What to do?</string>
+    <string name="remote_which_app">Which app to open?</string>
+    <string name="remote_link">Link (https://…, intent:…)</string>
+    <string name="remote_where">Where does it work?</string>
+    <string name="key_youtube">YouTube button</string>
+    <string name="key_netflix">Netflix button</string>
+    <string name="press_single">Single press</string>
+    <string name="press_double">Double press</string>
+    <string name="press_long">Long press</string>
+    <string name="scope_everywhere">In all apps</string>
+    <string name="scope_except_home">Except the home screen</string>
+    <string name="scope_only_home">Only on the home screen</string>
+    <string name="action_open_app">Open an app</string>
+    <string name="action_open_uri">Open a link</string>
+    <string name="action_home">Home</string>
+    <string name="action_back">Back</string>
+    <string name="action_recents">Recent apps</string>
+    <string name="action_volume_up">Volume +</string>
+    <string name="action_volume_down">Volume −</string>
+    <string name="action_mute">Mute</string>
+    <string name="action_play_pause">Play / pause</string>
+    <string name="action_next">Next track</string>
+    <string name="action_previous">Previous track</string>
+    <string name="action_assistant">Voice assistant</string>
+    <string name="action_quick_settings">Quick settings</string>
+    <string name="action_power_menu">Power menu</string>
+    <string name="action_screen_off">Turn the screen off</string>
+    <string name="action_nothing">Do nothing</string>
+
+    <!-- Home screen -->
+    <string name="wifi_on">Wi-Fi connected</string>
+    <string name="wifi_off">No Wi-Fi</string>
+    <string name="android_settings">Android TV settings</string>
+    <string name="menu_move_left">Move left</string>
+    <string name="menu_move_right">Move right</string>
+    <string name="menu_move_first">Move to start</string>
+    <string name="menu_move_last">Move to end</string>
+    <string name="menu_change_icon">Change icon</string>
+    <string name="menu_hide">Remove from home screen</string>
+    <string name="menu_app_info">App info</string>
+    <string name="menu_uninstall">Uninstall</string>
+    <string name="icon_title">Icon: %1$s</string>
+    <string name="icon_hint">16:9 pictures from the Pictures/Divan/icons folder on the TV</string>
+    <string name="icon_auto">Auto</string>
+    <string name="icon_banner">Banner</string>
+
+    <!-- PIN and parental control -->
+    <string name="pin_for_menu">PIN for the app menu</string>
+    <string name="pin_for_parental">Parental control PIN</string>
+    <string name="pin_for_app">PIN for “%1$s”</string>
+    <string name="pin_for_settings">PIN for Divan settings</string>
+    <string name="pin_wrong">Wrong PIN</string>
+    <string name="pin_too_many">Too many tries, wait %1$d s</string>
+    <plurals name="pin_too_short">
+        <item quantity="one">At least %d symbol is needed</item>
+        <item quantity="other">At least %d symbols are needed</item>
+    </plurals>
+    <string name="pin_hint">Arrows or digits, then OK. Back erases</string>
+    <string name="pin_new">New PIN</string>
+    <string name="pin_mismatch">The PINs did not match, set it again</string>
+    <!-- A range, not a count: no plural. -->
+    <string name="pin_rule" tools:ignore="PluralsCandidate">%1$d–%2$d arrows or digits, then OK</string>
+    <string name="pin_repeat">Repeat the PIN</string>
+    <string name="parental_title">Parental control</string>
+    <string name="parental_setup">Set a PIN and turn on parental control</string>
+    <string name="parental_switch_hint">Switch: the PIN and the app list are kept</string>
+    <string name="parental_pin_hint" tools:ignore="PluralsCandidate">PIN: %1$d–%2$d remote arrows or digits</string>
+    <string name="parental_change">Change PIN</string>
+    <string name="parental_remove">Remove PIN</string>
+    <string name="parental_remove_hint">Parental control turns off; the app list is kept</string>
+    <string name="parental_lock_settings">PIN to open Divan settings</string>
+    <string name="parental_lock_settings_hint">And for the card menu: move, remove, uninstall</string>
+    <string name="parental_apps">Apps behind the PIN</string>
+    <string name="parental_note">The PIN is asked when an app starts from the home screen or a remote button. A forgotten PIN is reset only by clearing Divan\'s data or reinstalling it, so it is worth locking the system Settings with the PIN too.</string>
+</resources>

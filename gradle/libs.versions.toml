@@ -1,0 +1,26 @@
+[versions]
+agp = "9.4.1"
+kotlin = "2.2.10"
+compose-bom = "2026.05.00"
+activity-compose = "1.9.3"
+core-ktx = "1.16.0"
+lifecycle = "2.9.4"
+datastore = "1.1.1"
+coroutines = "1.9.0"
+tv-material = "1.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle" }
+androidx-datastore-prefs = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-material-icons = { group = "androidx.compose.material", name = "material-icons-extended" }
+tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tv-material" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

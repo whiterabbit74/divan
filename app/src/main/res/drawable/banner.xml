@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 320x180 TV banner: a sofa on a warm background. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path android:fillColor="#2B2238" android:pathData="M0,0h320v180h-320z" />
+    <path android:fillColor="#E8A64E" android:pathData="M100,62h120a14,14 0,0 1,14 14v26h-148v-26a14,14 0,0 1,14 -14z" />
+    <path android:fillColor="#D98B3A" android:pathData="M74,92a14,14 0,0 1,28 0v34h116v-34a14,14 0,0 1,28 0v44h-172z" />
+    <path android:fillColor="#8C5A2B" android:pathData="M84,136h12v12h-12zM224,136h12v12h-12z" />
+</vector>
